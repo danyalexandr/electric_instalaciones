@@ -14,19 +14,18 @@ export default function Contact() {
     const form = e.currentTarget;
 
     try {
-      await emailjs.sendForm(
-        "service_bbx1e4k",
-        "template_3olmmua",
-        form,
-        "B0LWo3aUbmUTjgYop"
-      );
-      setSent(true);
-      form.reset();
-    } catch (error) {
-      alert("Error al enviar el mensaje");
-    } finally {
-      setLoading(false);
-    }
+  await emailjs.sendForm(
+    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+    form,
+    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
+  );
+  setSent(true);
+  form.reset();
+} catch (error) {
+  alert("Error al enviar el mensaje");
+}
+
   };
 
   return (
