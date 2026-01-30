@@ -66,7 +66,7 @@ export default function Services() {
 
   return (
     <section id="servicios" className="py-20 bg-gray-200 px-6">
-      <h2 className="text-3xl font-bold text-center mb-12">Servicios</h2>
+      <h2 className="text-gray-600 3xl font-bold text-center mb-12">Servicios</h2>
 
       <div
         ref={scrollRef}
