@@ -14,30 +14,24 @@ export default function Contact() {
     const form = e.currentTarget;
 
     try {
-  await emailjs.sendForm(
-    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
-    form,
-    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
-  );
-  setSent(true);
-  form.reset();
-} catch (error) {
-  alert("Error al enviar el mensaje");
-}
-
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        form,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string,
+      );
+      setSent(true);
+      form.reset();
+    } catch (error) {
+      alert("Error al enviar el mensaje");
+    }
   };
 
   return (
     <section id="contacto" className="py-20 bg-zinc-900 px-6">
-      <h2 className="text-3xl font-bold text-center mb-8">
-        Contacto
-      </h2>
+      <h2 className="text-3xl font-bold text-center mb-8">Contacto</h2>
 
-      <form
-        onSubmit={sendEmail}
-        className="max-w-xl mx-auto space-y-4"
-      >
+      <form onSubmit={sendEmail} className="max-w-xl mx-auto space-y-4">
         <input
           type="text"
           name="name"
@@ -52,6 +46,15 @@ export default function Contact() {
           required
           className="w-full p-3 bg-black border border-zinc-700 rounded"
         />
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Teléfono"
+          required
+          className="w-full p-3 bg-white border border-gray-300 rounded text-black"
+        />
+
         <textarea
           name="message"
           placeholder="Mensaje"

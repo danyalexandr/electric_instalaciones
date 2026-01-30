@@ -65,7 +65,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="servicios" className="py-20 bg-zinc-900 px-6">
+    <section id="servicios" className="py-20 bg-gray-200 px-6">
       <h2 className="text-3xl font-bold text-center mb-12">Servicios</h2>
 
       <div
@@ -75,7 +75,7 @@ export default function Services() {
         {[...services, ...services].map((service, i) => (
           <div
             key={i}
-            className="min-w-[320px] bg-black border border-zinc-700 rounded-lg overflow-hidden"
+            className="min-w-[320px] bg-white border border-gray-300 rounded-lg overflow-hidden"
           >
             <div className="h-48 relative">
               <Image
@@ -87,8 +87,8 @@ export default function Services() {
             </div>
 
             <div className="p-6">
-              <h3 className="font-semibold text-lg mb-2">{service.title}</h3>
-              <p className="text-gray-400 text-sm">{service.description}</p>
+              <h3 className="font-semibold text-lg mb-2 text-gray-900">{service.title}</h3>
+              <p className="text-gray-600 text-sm">{service.description}</p>
             </div>
           </div>
         ))}
