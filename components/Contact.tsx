@@ -37,14 +37,14 @@ export default function Contact() {
           name="name"
           placeholder="Nombre"
           required
-          className="w-full p-3 bg-black border border-zinc-700 rounded"
+          className="w-full p-3 bg-white border border-gray-300 rounded text-black"
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
           required
-          className="w-full p-3 bg-black border border-zinc-700 rounded"
+          className="w-full p-3 bg-white border border-gray-300 rounded text-black"
         />
 
         <input
@@ -71,7 +71,7 @@ export default function Contact() {
         </button>
 
         {sent && (
-          <p className="text-green-500 text-center">
+          <p className="text-orange-500 text-center">
             Mensaje enviado correctamente.
           </p>
         )}
