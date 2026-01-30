@@ -65,7 +65,7 @@ export default function Contact() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-orange-500 text-black font-semibold py-3 rounded hover:bg-orange-400 transition disabled:opacity-60"
+          className="w-full bg-orange-500 text-while font-semibold py-3 rounded hover:bg-orange-400 transition disabled:opacity-60"
         >
           {loading ? "Enviando..." : "Enviar consulta"}
         </button>

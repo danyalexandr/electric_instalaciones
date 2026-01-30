@@ -10,12 +10,12 @@ export default function Hero() {
           width={80}
           height={80}
         />
-        <span className="text-2xl md:text-3xl font-semibold tracking-wide">
+        <span className="text-gray-2xl md:text-3xl font-semibold tracking-wide">
           Electric Instalaciones SRL
         </span>
       </div>
 
-      <h1 className="text-3xl md:text-6xl font-bold max-w-4xl">
+      <h1 className="text-gray-3xl md:text-6xl font-bold max-w-4xl">
         Instalaciones Eléctricas Industriales, Comerciales y Hospitalarias
       </h1>
 
