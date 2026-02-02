@@ -12,7 +12,7 @@ export default function WhyUs() {
         ¿Por qué elegirnos?
       </h2>
 
-      <ul className="max-w-3xl mx-auto space-y-4 text-gray-300">
+      <ul className="max-w-3xl mx-auto space-y-4 text-gray-600">
         {reasons.map((reason, i) => (
           <li key={i}>✔ {reason}</li>
         ))}

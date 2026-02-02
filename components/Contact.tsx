@@ -28,7 +28,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="min-h-screen pt-32 flex flex-col justify-center items-center text-center px-6 bg-gray-100">
+    <section id="contacto" className="min-h-screen pt-32 flex flex-col justify-center items-center text-center px-6 bg-gray-200">
       <h2 className="text-gray-600 3xl font-bold text-center mb-8">Contacto</h2>
 
       <form onSubmit={sendEmail} className="max-w-xl mx-auto space-y-4">

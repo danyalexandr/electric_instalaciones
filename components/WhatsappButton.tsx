@@ -12,8 +12,8 @@ export default function WhatsappButton() {
       <Image
         src="/whatsapp.svg"
         alt="WhatsApp"
-        width={28}
-        height={28}
+        width={30}
+        height={30}
       />
     </a>
   );
