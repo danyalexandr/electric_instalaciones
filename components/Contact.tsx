@@ -65,13 +65,13 @@ export default function Contact() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-orange-500 text-while font-semibold py-3 rounded hover:bg-orange-400 transition disabled:opacity-60"
+          className="w-full bg-yellow-400 text-while font-semibold py-3 rounded hover:bg-yellow-300 transition disabled:opacity-60"
         >
           {loading ? "Enviando..." : "Enviar consulta"}
         </button>
 
         {sent && (
-          <p className="text-orange-500 text-center">
+          <p className="text-yellow-400 text-center">
             Mensaje enviado correctamente.
           </p>
         )}

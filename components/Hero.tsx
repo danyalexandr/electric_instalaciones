@@ -27,13 +27,13 @@ export default function Hero() {
       <div className="mt-8 flex gap-4">
         <a
           href="#contacto"
-          className="bg-orange-500 text-white px-6 py-3 font-semibold rounded hover:bg-orange-400"
+          className="bg-yellow-400 text-white px-6 py-3 font-semibold rounded hover:bg-yellow-300"
         >
           Solicitar presupuesto sin cargo
         </a>
         <a
           href="#servicios"
-          className="border border-orange-500 text-orange-500 px-6 py-3 rounded hover:bg-orange-500 hover:text-white"
+          className="border border-yellow-400 text-yellow-400 px-6 py-3 rounded hover:bg-yellow-400 hover:text-white"
         >
           Ver servicios
         </a>
