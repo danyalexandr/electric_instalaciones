@@ -10,7 +10,7 @@ export default function WhatsappButton() {
       aria-label="Contactar por WhatsApp"
     >
       <Image
-        src="/whatsapp.svg"
+        src="/whatsapp.png"
         alt="WhatsApp"
         width={30}
         height={30}
