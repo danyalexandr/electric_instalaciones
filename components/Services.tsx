@@ -1,97 +1,97 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import Image from "next/image";
 
-const services = [
-  {
-    title: "Instalaciones Industriales y Hospitalarias",
-    description:
-      "Tendido de alimentadores, tableros seccionales y sistemas eléctricos para entornos críticos.",
-    image: "/services/industrial.png",
-  },
-  {
-    title: "Instalaciones Comerciales y Domiciliarias",
-    description:
-      "Soluciones eléctricas seguras y eficientes para comercios y viviendas.",
-    image: "/services/comercial.png",
-  },
-  {
-    title: "Automatización e Iluminación",
-    description:
-      "Sistemas DALI, Lutron y automatización integral de edificios.",
-    image: "/services/automatizacion.png",
-  },
-  {
-    title: "Corrientes Débiles y BMS",
-    description:
-      "Cableado estructurado, CCTV, control de accesos y sistemas BMS.",
-    image: "/services/corrientes.png",
-  },
-];
-
 export default function Services() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
-
-    let scrollAmount = 0;
-    let isPaused = false;
-
-    const onEnter = () => (isPaused = true);
-    const onLeave = () => (isPaused = false);
-
-    container.addEventListener("mouseenter", onEnter);
-    container.addEventListener("mouseleave", onLeave);
-
-    const interval = setInterval(() => {
-      if (!isPaused) {
-        scrollAmount += 1;
-        container.scrollLeft = scrollAmount;
-
-        if (scrollAmount >= container.scrollWidth / 2) {
-          scrollAmount = 0;
-        }
-      }
-    }, 20);
-
-    return () => {
-      clearInterval(interval);
-      container.removeEventListener("mouseenter", onEnter);
-      container.removeEventListener("mouseleave", onLeave);
-    };
-  }, []);
+  const services = [
+    {
+      title: "Instalaciones Eléctricas Industriales y Hospitalarias",
+      description:
+        "Diseño y ejecución de instalaciones eléctricas de potencia, fabricación de tableros seccionales y de comando, y tendido de alimentadores, garantizando continuidad operativa y seguridad.",
+      image: "/services/industrial.png",
+    },
+    {
+      title: "Instalaciones Eléctricas Comerciales y Domiciliarias",
+      description:
+        "Montaje, adecuación y mantenimiento de instalaciones eléctricas en comercios y viviendas, cumpliendo normativas vigentes y optimizando el consumo energético.",
+      image: "/services/comercial.png",
+    },
+    {
+      title: "Protección y Extinción de Incendios",
+      description:
+        "Instalación de sistemas eléctricos asociados a detección, alarma y extinción de incendios, asegurando funcionamiento confiable en situaciones críticas.",
+      image: "/services/industrial.png",
+    },
+    {
+      title: "Iluminación y Distribución Inteligente",
+      description:
+        "Implementación de sistemas de iluminación eficiente mediante tecnologías DALI y Lutron, orientadas al control, automatización y ahorro energético.",
+      image: "/services/corrientes.png",
+    },
+    {
+      title: "Automatización de Edificios",
+      description:
+        "Integración de sistemas eléctricos y de control para automatización de edificios, mejorando la gestión operativa, la seguridad y la eficiencia.",
+      image: "/services/automatizacion.png",
+    },
+    {
+      title: "Corrientes Débiles y Sistemas Especiales",
+      description:
+        "Instalación de cableado estructurado, control de accesos, CCTV, BMS y sistemas especiales para entornos comerciales e industriales.",
+      image: "/services/corrientes.png",
+    },
+  ];
 
   return (
-    <section id="servicios" className="py-20 bg-gray-200 px-6">
-      <h2 className="text-gray-600 3xl font-bold text-center mb-12">Servicios</h2>
+    <section className="bg-gray-200 py-20" id="services">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Título */}
+        <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+          Nuestros servicios
+        </h2>
 
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-hidden md:overflow-hidden overflow-x-auto touch-pan-x max-w-6xl mx-auto"
-      >
-        {[...services, ...services].map((service, i) => (
-          <div
-            key={i}
-            className="min-w-[320px] bg-white border border-gray-300 rounded-lg overflow-hidden"
-          >
-            <div className="h-48 relative">
+        {/* Intro */}
+        <p className="text-gray-600 mb-12 max-w-3xl">
+          Brindamos soluciones eléctricas integrales para proyectos industriales,
+          comerciales y de infraestructura, adaptadas a las necesidades de cada
+          cliente.
+        </p>
+
+        {/* Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="bg-white border border-gray-300 rounded-lg overflow-hidden"
+            >
               <Image
                 src={service.image}
                 alt={service.title}
-                fill
-                className="object-cover"
+                width={400}
+                height={240}
+                className="object-cover w-full h-[200px]"
               />
-            </div>
 
-            <div className="p-6">
-              <h3 className="font-semibold text-lg mb-2 text-gray-900">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {service.title}
+                </h3>
+
+                <p className="text-sm text-gray-600">
+                  {service.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="mt-14">
+          <a
+            href="#contact"
+            className="inline-block bg-yellow-400 text-white px-6 py-3 rounded-md hover:bg-yellow-300 transition"
+          >
+            Solicitar evaluación técnica
+          </a>
+        </div>
       </div>
     </section>
   );

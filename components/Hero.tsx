@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       <h1 className="text-gray-600 3xl md:text-6xl font-bold max-w-4xl">
-        Instalaciones Eléctricas Industriales, Comerciales y Hospitalarias
+        Instalaciones eléctricas industriales y comerciales seguras y normadas
       </h1>
 
       <p className="text-gray-600 mt-6 max-w-2xl text-sm md:text-base">
@@ -29,7 +29,7 @@ export default function Hero() {
           href="#contacto"
           className="bg-yellow-400 text-white px-6 py-3 font-semibold rounded hover:bg-yellow-300"
         >
-          Solicitar presupuesto sin cargo
+          Solicitar evaluación técnica
         </a>
         <a
           href="#servicios"
