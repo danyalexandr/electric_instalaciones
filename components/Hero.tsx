@@ -5,10 +5,10 @@ export default function Hero() {
     <section className="min-h-screen pt-32 flex flex-col justify-center items-center text-center px-6 bg-gray-100">
       <div className="flex items-center gap-4 mb-8">
         <Image
-          src="/logo.png"
+          src="/logobg.png"
           alt="Electric Instalaciones SRL"
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <span className="text-gray-600 2xl md:text-3xl font-semibold tracking-wide">
           Electric Instalaciones SRL
