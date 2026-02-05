@@ -8,7 +8,7 @@ export default function Hero() {
         {/* Logo grande */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/logoWW.png"
+            src="/logoia.png"
             alt="Electric Instalaciones SRL"
             width={612}
             height={408}

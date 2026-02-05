@@ -6,7 +6,7 @@ export default function Header() {
   <div className="flex items-center gap-2">
     <Image src="/logobg.png" alt="Electric Instalaciones SRL" width={40} height={40} />
     <span className="font-semibold text-sm md:text-lg text-gray-600">
-      Electric Instalaciones SRL
+      Electric Instalaciones srl
     </span>
   </div>
 </header>
