@@ -1,10 +1,19 @@
 export const services = [
-  {
+   {
     title: "Instalaciones eléctricas industriales",
+    shortDescription:
+      "Proyectos eléctricos para industrias y entornos críticos.",
     description:
-      "Proyectos eléctricos para industrias y entornos críticos: alimentación de potencia, tableros seccionales y sistemas de comando, control y medición.",
-      image: "/services/industrial.png",
+      "Desarrollamos instalaciones eléctricas industriales completas, incluyendo tendido de alimentadores de potencia, fabricación de tableros seccionales y sistemas de comando, control y medición.",
+    details: [
+      "Tendido de líneas de potencia",
+      "Tableros eléctricos seccionales",
+      "Sistemas de comando y control",
+      "Adecuación a normas de seguridad",
+    ],
+    image: "/services/industrial.png",
   },
+  // resto igual,
   {
     title: "Instalaciones comerciales y domiciliarias",
     description:

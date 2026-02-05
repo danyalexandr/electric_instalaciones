@@ -2,40 +2,46 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen pt-32 flex flex-col justify-center items-center text-center px-6 bg-gray-100">
-      <div className="flex items-center gap-4 mb-8">
-        <Image
-          src="/logobg.png"
-          alt="Electric Instalaciones SRL"
-          width={100}
-          height={100}
-        />
-        <span className="text-gray-600 2xl md:text-3xl font-semibold tracking-wide">
-          Electric Instalaciones SRL
-        </span>
-      </div>
+    <section className="min-h-screen bg-gray-100 flex items-center">
+      <div className="max-w-6xl mx-auto px-6 text-center">
 
-      <h1 className="text-gray-600 3xl md:text-6xl font-bold max-w-4xl">
-        Instalaciones eléctricas profesionales para entornos exigentes
-      </h1>
+        {/* Logo grande */}
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/logoWW.png"
+            alt="Electric Instalaciones SRL"
+            width={612}
+            height={408}
+            priority
+          />
+        </div>
 
-      <p className="text-gray-600 mt-6 max-w-2xl text-sm md:text-base">
-        Desarrollamos y mantenemos sistemas eléctricos industriales, comerciales y de infraestructura, priorizando seguridad, continuidad operativa y cumplimiento normativo.
-      </p>
+        {/* H1 SEO */}
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Instalaciones eléctricas industriales y comerciales en Argentina
+        </h1>
 
-      <div className="mt-8 flex gap-4">
-        <a
-          href="#contacto"
-          className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-md hover:bg-yellow-500 disabled:opacity-60"
-        >
-          Solicitar evaluación técnica
-        </a>
-        <a
-          href="#servicios"
-          className="border border-yellow-400 text-yellow-400 px-6 py-3 rounded hover:bg-yellow-400 hover:text-white"
-        >
-          Ver servicios
-        </a>
+        {/* Subtexto */}
+        <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+          Soluciones seguras, eficientes y a medida. Especialistas en proyectos
+          de alta exigencia técnica.
+        </p>
+
+        {/* CTAs */}
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a
+            href="#contact"
+            className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-md font-medium hover:bg-yellow-300"
+          >
+            Solicitar evaluación tecnica
+          </a>
+          <a
+            href="#services"
+            className="border border-gray-400 text-gray-700 px-6 py-3 rounded-md hover:bg-gray-200"
+          >
+            Ver servicios
+          </a>
+        </div>
       </div>
     </section>
   );
