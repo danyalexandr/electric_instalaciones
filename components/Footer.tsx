@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 border-t border-gray-300">
+    <footer className="bg-gray-300 border-t border-gray-400">
       <div className="max-w-6xl mx-auto px-6 py-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-sm text-gray-600">
         {/* Empresa */}
         <div>
@@ -8,8 +8,7 @@ export default function Footer() {
             Electric Instalaciones SRL
           </h3>
           <p>
-            Soluciones eléctricas para entornos industriales, comerciales y de
-            infraestructura.
+            Soluciones eléctricas para industria, comercio e infraestructura.
           </p>
         </div>
 

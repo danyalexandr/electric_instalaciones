@@ -16,18 +16,17 @@ export default function Hero() {
       </div>
 
       <h1 className="text-gray-600 3xl md:text-6xl font-bold max-w-4xl">
-        Instalaciones eléctricas industriales y comerciales seguras y normadas
+        Instalaciones eléctricas profesionales para entornos exigentes
       </h1>
 
       <p className="text-gray-600 mt-6 max-w-2xl text-sm md:text-base">
-        Brindamos soluciones eléctricas seguras, eficientes y a medida para
-        proyectos de alta exigencia.
+        Desarrollamos y mantenemos sistemas eléctricos industriales, comerciales y de infraestructura, priorizando seguridad, continuidad operativa y cumplimiento normativo.
       </p>
 
       <div className="mt-8 flex gap-4">
         <a
           href="#contacto"
-          className="bg-yellow-400 text-white px-6 py-3 font-semibold rounded hover:bg-yellow-300"
+          className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-md hover:bg-yellow-500 disabled:opacity-60"
         >
           Solicitar evaluación técnica
         </a>

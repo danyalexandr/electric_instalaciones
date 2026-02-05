@@ -148,7 +148,7 @@ async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
           <button
             type="submit"
             disabled={loading}
-            className="bg-yellow-400 text-white px-6 py-3 rounded-md hover:bg-yellow-300 disabled:opacity-60"
+            className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-md hover:bg-yellow-500 disabled:opacity-60"
           >
             {loading ? "Enviando..." : "Solicitar evaluación técnica"}
           </button>
