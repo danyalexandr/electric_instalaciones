@@ -1,6 +1,11 @@
 import "./globals.css";
 
 export const metadata = {
+
+  icons: {
+    icon: "/favicon.ico",
+  },
+
   title: "Electric Instalaciones SRL | Instalaciones Eléctricas Industriales",
   description:
     "Electric Instalaciones SRL. Servicios eléctricos industriales, comerciales y hospitalarios. Automatización, tableros eléctricos y mantenimiento especializado.",
@@ -14,7 +19,7 @@ export const metadata = {
   openGraph: {
     title: "Electric Instalaciones SRL",
     description:
-      "Soluciones eléctricas industriales, comerciales y hospitalarias.",
+      "Soluciones eléctricas industriales y comerciales.",
     url: "https://www.electricinstalacionessrl.com.ar",
     siteName: "Electric Instalaciones SRL",
     locale: "es_AR",
