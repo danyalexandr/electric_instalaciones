@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { supabase } from "@/lib/supabaseClient";
+
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
@@ -30,26 +32,32 @@ export default function Contact() {
     return "";
   }
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setError("");
-    setSuccess(false);
+async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault();
+  setError("");
+  setSuccess(false);
 
-    const validationError = validate();
-    if (validationError) {
-      setError(validationError);
-      return;
-    }
-
-    setLoading(true);
-
-    // Simulación de envío (luego Supabase)
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-      setForm({ name: "", email: "", phone: "", message: "" });
-    }, 1000);
+  const validationError = validate();
+  if (validationError) {
+    setError(validationError);
+    return;
   }
+
+  setLoading(true);
+
+  const { error } = await supabase.from("contacts").insert([form]);
+
+  setLoading(false);
+
+  if (error) {
+    setError("No se pudo enviar la consulta. Intente nuevamente.");
+    return;
+  }
+
+  setSuccess(true);
+  setForm({ name: "", email: "", phone: "", message: "" });
+}
+
 
   return (
     <section className="bg-gray-200 py-20" id="contact">
