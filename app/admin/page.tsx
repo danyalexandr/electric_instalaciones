@@ -63,7 +63,7 @@ export default function AdminPage() {
   // ⏳ Cargando
   if (loading) {
     return (
-      <div className="p-8 text-gray-600">
+      <div className="p-8 text-gray-900">
         Cargando contactos…
       </div>
     );
