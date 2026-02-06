@@ -11,8 +11,8 @@ export default function ServiceModal({ service, onClose }: any) {
     >
       {/* Modal */}
       <div
-        className="bg-white max-w-2xl w-full rounded-lg overflow-hidden relative"
-        onClick={(e) => e.stopPropagation()} // evita cerrar al hacer clic dentro
+        className="bg-white w-full max-w-lg md:max-w-xl rounded-lg relative max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Botón cerrar */}
         <button
@@ -24,7 +24,7 @@ export default function ServiceModal({ service, onClose }: any) {
         </button>
 
         {/* Imagen */}
-        <div className="relative h-56 w-full">
+        <div className="relative h-44 md:h-56 w-full">
           <Image
             src={service.image}
             alt={service.title}
@@ -39,9 +39,7 @@ export default function ServiceModal({ service, onClose }: any) {
             {service.title}
           </h3>
 
-          <p className="text-gray-600 leading-relaxed">
-            {service.description}
-          </p>
+          <p className="text-gray-600 leading-relaxed">{service.description}</p>
         </div>
       </div>
     </div>
