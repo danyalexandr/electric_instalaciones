@@ -60,7 +60,7 @@ async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 
 
   return (
-    <section className="bg-gray-200 py-20" id="contact">
+    <section className="bg-gray-300 py-20" id="contact">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-semibold text-gray-900 mb-4">
           Contacto
