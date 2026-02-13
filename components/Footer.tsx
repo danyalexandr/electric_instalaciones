@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-300 border-t border-gray-400">
-      <div className="max-w-6xl mx-auto px-6 py-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-sm text-gray-600">
+    <footer className="bg-gray-400 border-t border-gray-500">
+      <div className="max-w-6xl mx-auto px-6 py-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-sm text-gray-700">
         {/* Empresa */}
         <div>
           <h3 className="font-semibold text-gray-900 mb-2">
@@ -42,7 +42,7 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} Electric Instalaciones SRL
           </p>
-          <p className="mt-2 text-xs text-gray-500">
+          <p className="mt-2 text-xs text-gray-700">
             Todos los derechos reservados
           </p>
         </div>

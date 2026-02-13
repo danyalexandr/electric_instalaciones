@@ -35,7 +35,7 @@ export default function AdminPage() {
   }
 
   return (
-    <section className="min-h-screen bg-gray-500 text-white p-8">
+    <section className="min-h-screen bg-gray-100 text-gray-900 p-8">
       <h1 className="text-2xl font-semibold mb-6">
         Panel de Administración
       </h1>
@@ -47,7 +47,7 @@ export default function AdminPage() {
           className={`px-4 py-2 rounded ${
             tab === "contacts"
               ? "bg-yellow-500 text-black"
-              : "bg-gray-800"
+              : "bg-gray-200"
           }`}
         >
           Contactos
@@ -58,7 +58,7 @@ export default function AdminPage() {
           className={`px-4 py-2 rounded ${
             tab === "quotes"
               ? "bg-yellow-500 text-black"
-              : "bg-gray-800"
+              : "bg-gray-200"
           }`}
         >
           Cotizaciones

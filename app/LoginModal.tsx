@@ -18,9 +18,9 @@ export default function LoginModal() {
   }
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-gray-400 flex items-center justify-center z-50">
       <div className="bg-white p-6 rounded-lg w-full max-w-sm">
-        <h2 className="text-gray-900 xl font-semibold mb-4">SOLO ADMIN</h2>
+        <h2 className="text-gray-900 xl font-semibold mb-4">ADMIN</h2>
 
         <input
           type="email"
@@ -42,7 +42,7 @@ export default function LoginModal() {
 
         <button
           onClick={handleLogin}
-          className="w-full bg-yellow-400 py-2 mt-4"
+          className="w-full bg-yellow-400 py-2 mt-4 text-gray-900 font-semibold rounded"
         >
           Ingresar
         </button>
