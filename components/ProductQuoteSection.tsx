@@ -8,6 +8,7 @@ type Product = {
   id: string;
   name: string;
   category: string;
+  description: string;
 };
 
 type SelectedProduct = {
@@ -25,7 +26,7 @@ export default function ProductQuoteSection() {
     async function loadProducts() {
       const { data } = await supabase
         .from("products")
-        .select("id, name, category")
+        .select("id, name, category, description")
         .eq("active", true)
         .order("category");
 
@@ -168,7 +169,7 @@ export default function ProductQuoteSection() {
                 >
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-gray-900 truncate">{product.name}</p>
-                    <p className="text-sm text-gray-500">{product.category}</p>
+                    <p className="text-sm text-gray-500">{product.description}</p>
                   </div>
 
                   <button

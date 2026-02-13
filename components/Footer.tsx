@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Empresa */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
@@ -71,14 +71,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                <a href="tel:+54911..." className="text-gray-400 hover:text-yellow-400 transition-colors">
-                  +54 9 11 ...
+                <a href="tel:+5491165446872" className="text-gray-400 hover:text-yellow-400 transition-colors">
+                  +54 9 11 6544 6872
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                <a href="mailto:contacto@..." className="text-gray-400 hover:text-yellow-400 transition-colors">
-                  contacto@...
+                <a href="mailto:contacto@electricinstalaciones.com" className="text-gray-400 hover:text-yellow-400 transition-colors">
+                  contacto@electricinstalaciones.com
                 </a>
               </li>
             </ul>
@@ -92,25 +92,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h3 className="font-bold text-lg mb-6">Newsletter</h3>
-            <p className="text-gray-400 mb-4">
-              Recibe noticias sobre servicios y promociones.
-            </p>
-            <form className="space-y-3">
-              <input
-                type="email"
-                placeholder="Tu email"
-                className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition"
-              />
-              <button
-                type="submit"
-                className="w-full bg-yellow-400 text-gray-900 font-bold py-3 rounded-lg hover:bg-yellow-500 transition-colors"
-              >
-                Suscribirse
-              </button>
-            </form>
-          </div>
+          
         </div>
       </div>
 
