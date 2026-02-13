@@ -53,10 +53,11 @@ export default function Hero() {
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
-                href="#services"
+                href="#products"
                 className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-bold hover:border-yellow-400 hover:text-yellow-500 transition-all duration-300"
               >
-                Ver servicios
+                Solicitar cotización de productos
+                <ArrowRight className="w-5 h-5" />
               </a>
             </div>
           </div>

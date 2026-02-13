@@ -25,18 +25,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-6">
               Soluciones eléctricas profesionales para industria, comercio e infraestructura en Argentina.
             </p>
-            {/* Social Links */}
-            <div className="flex gap-4">
-              <a href="#" className="p-2 bg-gray-800 rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
+            
           </div>
 
           {/* Servicios */}
@@ -103,10 +92,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               © {new Date().getFullYear()} Electric Instalaciones SRL. Todos los derechos reservados.
             </p>
-            <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">Términos y condiciones</a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">Política de privacidad</a>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -125,7 +125,7 @@ export default function ProductQuoteSection() {
     : products.filter((p) => p.category === selectedCategory);
 
   return (
-    <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-24">
+    <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-24 relative overflow-hidden" id="products">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

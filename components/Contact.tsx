@@ -112,7 +112,7 @@ async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
             {/* Decorative element */}
             <div className="mt-12 p-6 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border border-yellow-100">
               <p className="text-gray-700 italic">
-                "Notre équipe technique vous répond dans les 24 heures avec une évaluation détaillée de votre projet."
+                "Nuestro equipo técnico responderá en 24 horas con una evaluación detallada de su proyecto."
               </p>
               <p className="text-sm text-gray-500 mt-2">— Equipo técnico</p>
             </div>
